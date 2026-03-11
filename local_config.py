@@ -1,7 +1,7 @@
 # ERPNext related configs
-ERPNEXT_API_KEY = "395fc38c307a734"
-ERPNEXT_API_SECRET = "36be779a8ff2345"
-ERPNEXT_URL = "https://staging-dieture.k.frappe.cloud"
+ERPNEXT_API_KEY = "095e3782db32c47"
+ERPNEXT_API_SECRET = "6f933e295d5cd61"
+ERPNEXT_URL = "https://erp.dieture.com"
 ERPNEXT_VERSION = 15
 
 
@@ -19,15 +19,11 @@ IMPORT_START_DATE = "20250901"  # format: '20190501'
 # - latitude - float, latitude of the location of the device
 # - longitude - float, longitude of the location of the device
 devices = [
-    {
-        "device_id": "CQZ7231060408",
-        "ip": "192.168.20.39",
-        "punch_direction": "AUTO",
-        "clear_from_device_on_fetch": False,
-        "latitude": 25.3489005,
-        "longitude": 51.4730086,
-    },
-    # {'device_id':'test_2','ip':'192.168.2.209', 'punch_direction': None, 'clear_from_device_on_fetch': False, 'latitude':0.0000,'longitude':0.0000}
+    {"device_id": "A3T5183160008", "ip": "192.168.20.7", "punch_direction": "AUTO", "clear_from_device_on_fetch": False, "latitude": 25.3489005, "longitude": 51.4730086},   # DIETURE OFFICE
+    {"device_id": "AIOR194460723", "ip": "192.168.20.34", "punch_direction": "AUTO", "clear_from_device_on_fetch": False, "latitude": 25.3489005, "longitude": 51.4730086},   # DRY STORE
+    {"device_id": "CKPG231160034", "ip": "192.168.100.64", "punch_direction": "AUTO", "clear_from_device_on_fetch": False, "latitude": 25.3489005, "longitude": 51.4730086},  # KITCHEN STAFF
+    {"device_id": "CKPG231160075", "ip": "192.168.30.250", "punch_direction": "AUTO", "clear_from_device_on_fetch": False, "latitude": 36.8065, "longitude": 10.1815},       # Tunisia
+    {"device_id": "CQZ7231060408", "ip": "192.168.20.41", "punch_direction": "AUTO", "clear_from_device_on_fetch": False, "latitude": 25.3489005, "longitude": 51.4730086},  # Admin Office Entrance
 ]
 
 # Configs updating sync timestamp in the Shift Type DocType

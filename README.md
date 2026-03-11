@@ -31,6 +31,13 @@ Run the `attendance-sync` file from the folder; This should setup all it's depen
 ### CLI
 The `erpnext_sync.py` file is the "backbone" of this project. Apart from Windows _(which has its own wrapper `erpnext_sync_win.py`)_, this file can be directly used to set up the sync tool. Further information provided in the [/Wiki](https://github.com/frappe/biometric-attendance-sync-tool/wiki).
 
+### BioTime 8.5 (API-based)
+If you use **BioTime 8.5** (ZKTeco central server), use the API-based sync instead—no direct device TCP needed. It fetches all devices and transactions from the BioTime API.
+
+1. Edit `biotime_config.py`: set `BIOTIME_BASE_URL`, `BIOTIME_USERNAME`, `BIOTIME_PASSWORD`, and ERPNext credentials.
+2. Run: `python biotime_erpnext_sync.py`
+3. Windows service: `python biotime_erpnext_sync_win.py install` then `net start BioTimeERPNextSyncService`
+
 
 ## Setup Specifications (For CLI)
 
