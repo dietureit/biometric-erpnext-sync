@@ -5,15 +5,15 @@ BIOTIME_USERNAME = "admin"
 BIOTIME_PASSWORD = "admin123"
 
 # ERPNext configs
-ERPNEXT_API_KEY = "095e3782db32c47"
-ERPNEXT_API_SECRET = "6f933e295d5cd61"
+ERPNEXT_API_KEY = "48ef06a169ff5db"
+ERPNEXT_API_SECRET = "1188c2182181dc7"
 ERPNEXT_URL = "https://erp.dieture.com"
 ERPNEXT_VERSION = 15
 
 # Operational configs
 PULL_FREQUENCY = 0  # minutes between sync runs (0 = every run)
 LOGS_DIRECTORY = "logs"
-IMPORT_START_DATE = "20250901"  # format: YYYYMMDD, punches before this are skipped
+IMPORT_START_DATE = "20260101"  # format: YYYYMMDD, punches before this are skipped
 
 # BioTime punch_state to log_type mapping
 # punch_state values from BioTime: "0"=Check-in, "1"=Check-out (typical ZKTeco convention)

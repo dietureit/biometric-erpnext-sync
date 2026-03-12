@@ -1,0 +1,3 @@
+# BioTime sync only - no PyQt5, no pyzk (avoids Visual C++ build on Windows)
+requests
+pickledb
